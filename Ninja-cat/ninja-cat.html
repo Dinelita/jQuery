@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+	
+	 $(document).ready(function(){
+
+	 	$('img').click(function() {
+          var temp= $(this).attr('src');
+          $(this).attr('src', $(this).attr('data-alt-src'));
+          $(this).attr('data-alt-src',temp);
+    });
+	});
+
+</script>  
+
+</head>
+<body>
+
+
+<div id="cont">
+	<div id="ninja"><img src='ninja0.png' data-alt-src='cat0.png' /></div>
+	<div id="ninja"><img src='ninja1.png' data-alt-src='cat1.png' /></div>
+	<div id="ninja"><img src='ninja2.png' data-alt-src='cat2.png' /></div>
+	<div id="ninja"><img src='ninja3.png' data-alt-src='cat3.png' /></div>
+	<div id="ninja"><img src='ninja4.png' data-alt-src='cat4.png' /></div>
+
+</div>
+
+</body>
+</html>
+
